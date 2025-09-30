@@ -1,15 +1,9 @@
 const HOUSE_HOTSPOTS_CONFIG = [
     {
         variant: {
-            images: [
-                {
-                    src: "https://cdn.treehouseinternetgroup.com/cms_images/107/High%20energy%20bills_slider%20image%203.jpg",
-                    alt: "High Energy Bills"
-                }
-            ],
-            title: "High Energy Bills",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            moreDetailsUrl: "https://www.gothrasher.com/3d-house/high-energy-bills.html"
+            title: 'High Energy Bills',
+            url: 'https://www.gothrasher.com/3d-house/high-energy-bills.html',
+            newTab: true
         },
         popupProps: {
             popupSelector: "high-energy-bills"
@@ -135,6 +129,127 @@ const HOUSE_HOTSPOTS_CONFIG = [
             {
                 imageIndex: 100,
                 xCoord: 1160
+            }
+        ]
+    },
+    {
+        variant: {
+            title: 'Humid Air',
+            url: 'https://www.gothrasher.com/3d-house/humid-air.html',
+            newTab: true
+        },
+        popupProps: {
+            popupSelector: "humid-air"
+        },
+        initialDimensions: [
+            1889,
+            1204
+        ],
+        positions: [
+            {
+                imageIndex: 23,
+                xCoord: 1205,
+                yCoord: 635
+            },
+            {
+                imageIndex: 24,
+                xCoord: 1190
+            },
+            {
+                imageIndex: 25,
+                xCoord: 1175
+            },
+            {
+                imageIndex: 26,
+                xCoord: 1160
+            },
+            {
+                imageIndex: 27,
+                xCoord: 1145
+            },
+            {
+                imageIndex: 28,
+                xCoord: 1125
+            },
+            {
+                imageIndex: 29,
+                xCoord: 1105
+            },
+            {
+                imageIndex: 30,
+                xCoord: 1085
+            },
+            {
+                imageIndex: 31,
+                xCoord: 1060
+            },
+            {
+                imageIndex: 32,
+                xCoord: 1040
+            },
+            {
+                imageIndex: 33,
+                xCoord: 1020
+            },
+            {
+                imageIndex: 34,
+                xCoord: 995
+            },
+            {
+                imageIndex: 35,
+                xCoord: 970
+            },
+            {
+                imageIndex: 36,
+                xCoord: 950
+            },
+            {
+                imageIndex: 37,
+                xCoord: 930
+            },
+            {
+                imageIndex: 38,
+                xCoord: 905
+            },
+            {
+                imageIndex: 39,
+                xCoord: 880
+            },
+            {
+                imageIndex: 40,
+                xCoord: 860
+            },
+            {
+                imageIndex: 41,
+                xCoord: 835
+            },
+            {
+                imageIndex: 42,
+                xCoord: 815
+            },
+            {
+                imageIndex: 43,
+                xCoord: 795
+            },
+            {
+                imageIndex: 44,
+                xCoord: 775
+            },
+            {
+                imageIndex: 45,
+                xCoord: 755
+            },
+            {
+                imageIndex: 46,
+                xCoord: 735
+            },
+            {
+                imageIndex: 47,
+                xCoord: 715
+            },
+            {
+                imageIndex: 48,
+                xCoord: 700
             }
         ]
     }
