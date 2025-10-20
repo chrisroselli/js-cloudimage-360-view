@@ -19,11 +19,59 @@
     .cloudimage-360-hotspot-link-icon::before {
       background-image: none;
     }
+
+    .cloudimage-360 .cloudimage-360-left, .cloudimage-360 .cloudimage-360-right {
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.5);
+	border: none;
+	border-radius: 4px;
+}
+.cloudimage-360 .cloudimage-360-left:focus, .cloudimage-360 .cloudimage-360-right:focus {
+	outline: none;
+}
+.cloudimage-360 .cloudimage-360-left {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: calc(50% - 15px);
+	left: 20px;
+}
+.cloudimage-360 .cloudimage-360-right {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: calc(50% - 15px);
+	right: 20px;
+}
+.cloudimage-360 .cloudimage-360-left:before, .cloudimage-360 .cloudimage-360-right:before {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: 50% 50% / cover no-repeat;
+}
+.cloudimage-360 .cloudimage-360-left:before {
+	background-image: url('https://cdn.treehouseinternetgroup.com/cms_images/107/3d-house-arrow.png');
+  cursor: pointer;
+}
+.cloudimage-360 .cloudimage-360-right:before {
+	background-image: url('https://cdn.treehouseinternetgroup.com/cms_images/107/3d-house-arrow.png');
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.cloudimage-360 .cloudimage-360-left.not-active, .cloudimage-360 .cloudimage-360-right.not-active {
+	opacity: 0.4;
+	cursor: default;
+}
   </style>
   <div class="cloudimage-360" id="3d-house"
     data-folder="https://cdn.treehouseinternetgroup.com/cms_core/images/thrasher/3d-house/"
     data-filename-x="3d-house-{index}.png" data-amount-x="100" data-hide-360-logo data-hotspots
-    data-info="white || black" data-spin-reverse data-bottom-circle></div>
+    data-info="white || black" data-spin-reverse data-bottom-circle>
+  <button class="cloudimage-360-left"></button>
+	<button class="cloudimage-360-right"></button>
+    </div>
+
 
   <script src="https://cdn.treehouseinternetgroup.com/cms_core/js/thrasher/js-cloudimage-360-view.min.js"></script>
   <script src="index.js"></script>
@@ -40,7 +88,7 @@
         // Create iframe
         var iframe = document.createElement('iframe');
         iframe.src = url;
-        iframe.width = "450";
+        iframe.width = "1000";
         iframe.height = "600";
         iframe.style.border = "none";
         // Replace the <a> with the iframe
@@ -60,7 +108,7 @@
         // Create iframe
         var iframe = document.createElement('iframe');
         iframe.src = url;
-        iframe.width = "450";
+        iframe.width = "1000";
         iframe.height = "600";
         iframe.style.border = "none";
         // Replace the <a> with the iframe

@@ -120,15 +120,15 @@ const HOUSE_HOTSPOTS_CONFIG = [
             },
             {
                 imageIndex: 98,
-                xCoord: 1180
+                xCoord: 1190
             },
             {
                 imageIndex: 99,
-                xCoord: 1170
+                xCoord: 1185
             },
             {
                 imageIndex: 100,
-                xCoord: 1160
+                xCoord: 1165
             }
         ]
     },
