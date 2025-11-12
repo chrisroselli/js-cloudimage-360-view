@@ -1,18 +1,130 @@
-<!DOCTYPE html><body>
-<style>canvas{max-width:1500px!important;height:auto!important}.cloudimage-360{justify-content:center;display:flex}.cloudimage-360-images-carousel .cloudimage-360-carousel-image{min-height:auto}.cloudimage-360-hotspot-link-icon:before{background-image:none}.cloudimage-360 .cloudimage-360-left,.cloudimage-360 .cloudimage-360-right{background:#ffffff80;border:none;border-radius:4px;padding:8px}.cloudimage-360 .cloudimage-360-left:focus,.cloudimage-360 .cloudimage-360-right:focus{outline:none}.cloudimage-360 .cloudimage-360-left{z-index:100;display:none;position:absolute;top:calc(50% - 15px);left:20px}.cloudimage-360 .cloudimage-360-right{z-index:100;display:none;position:absolute;top:calc(50% - 15px);right:20px}.cloudimage-360 .cloudimage-360-left:before,.cloudimage-360 .cloudimage-360-right:before{content:"";background:50%/cover no-repeat;width:30px;height:30px;display:block}.cloudimage-360 .cloudimage-360-left:before{cursor:pointer;background-image:url(https://cdn.treehouseinternetgroup.com/cms_images/107/3d-house-arrow.png)}.cloudimage-360 .cloudimage-360-right:before{cursor:pointer;background-image:url(https://cdn.treehouseinternetgroup.com/cms_images/107/3d-house-arrow.png);transform:rotate(180deg)}.cloudimage-360 .cloudimage-360-left.not-active,.cloudimage-360 .cloudimage-360-right.not-active{opacity:.4;cursor:default}</style>
-  <div class=cloudimage-360 id=3d-house data-folder=https://cdn.treehouseinternetgroup.com/cms_core/images/thrasher/3d-house/ data-filename-x=3d-house-{index}.png data-amount-x=100 data-hide-360-logo data-hotspots data-info="white || black" data-spin-reverse data-bottom-circle>
-  <button class=cloudimage-360-left></button>
-	<button class=cloudimage-360-right></button>
-    </div>
+<!DOCTYPE html><html><head></head><body>
+  <style>canvas {
+  max-width: 1500px !important;
+  height: auto !important;
+}
+
+.cloudimage-360 {
+  justify-content: center;
+  display: flex;
+}
+
+.cloudimage-360-images-carousel .cloudimage-360-carousel-image {
+  min-height: auto;
+}
+
+.cloudimage-360-hotspot-popup {
+  padding: 0;
+}
+
+.cloudimage-360-hotspot-link-icon:before {
+  background-image: none;
+}
+
+.cloudimage-360 .cloudimage-360-left, .cloudimage-360 .cloudimage-360-right {
+  background: #ffffff80;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.cloudimage-360 .cloudimage-360-left:focus, .cloudimage-360 .cloudimage-360-right:focus {
+  outline: none;
+}
+
+.cloudimage-360 .cloudimage-360-left {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 20px;
+}
+
+.cloudimage-360 .cloudimage-360-right {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 20px;
+}
+
+.cloudimage-360 .cloudimage-360-left:before, .cloudimage-360 .cloudimage-360-right:before {
+  content: "";
+  background: 50% / cover no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.cloudimage-360 .cloudimage-360-left:before {
+  cursor: pointer;
+  background-image: url("https://cdn.treehouseinternetgroup.com/cms_images/107/3d-house-arrow.png");
+}
+
+.cloudimage-360 .cloudimage-360-right:before {
+  cursor: pointer;
+  background-image: url("https://cdn.treehouseinternetgroup.com/cms_images/107/3d-house-arrow.png");
+  transform: rotate(180deg);
+}
+
+.cloudimage-360 .cloudimage-360-left.not-active, .cloudimage-360 .cloudimage-360-right.not-active {
+  opacity: .4;
+  cursor: default;
+}
+</style>
+  <div class="cloudimage-360" id="3d-house" data-folder="https://cdn.treehouseinternetgroup.com/cms_core/images/thrasher/3d-house/" data-filename-x="3d-house-{index}.png" data-amount-x="100" data-info="white || black" data-hide-360-logo="" data-hotspots="" data-spin-reverse="">
+    <button class="cloudimage-360-left"></button>
+    <button class="cloudimage-360-right"></button>
+  </div>
 
 
-  <script src=https://cdn.treehouseinternetgroup.com/cms_core/js/thrasher/js-cloudimage-360-view.min.js></script>
-  <script src=/js-cloudimage-360-view.94a55ac5.js></script>
+  <script src="https://cdn.treehouseinternetgroup.com/cms_core/js/thrasher/js-cloudimage-360-view.min.js"></script>
+  <script src="/js-cloudimage-360-view.c36f364e.js"></script>
 
-<script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".high-energy-bills").forEach(function(e){e.querySelectorAll("a").forEach(function(e){var t=document.createElement("iframe");t.src="https://www.gothrasher.com/3d-house/high-energy-bills.html",t.width="1000",t.height="600",t.style.border="none",e.parentNode.replaceChild(t,e)})})}),document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".humid-air").forEach(function(e){e.querySelectorAll("a").forEach(function(e){var t=document.createElement("iframe");t.src="https://www.gothrasher.com/3d-house/humid-air.html",t.width="1000",t.height="600",t.style.border="none",e.parentNode.replaceChild(t,e)})})});</script>
+  <script>document.addEventListener("DOMContentLoaded", function() {
+    // Find all elements with class 'high-energy-bills'
+    var highEnergyBillsElements = document.querySelectorAll('.high-energy-bills');
+    highEnergyBillsElements.forEach(function(el) {
+        // Find all <a> tags inside this element
+        var links = el.querySelectorAll('a');
+        links.forEach(function(link) {
+            var url = "https://www.gothrasher.com/3d-house/high-energy-bills.html";
+            // Create iframe
+            var iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.width = "1000";
+            iframe.height = "600";
+            iframe.style.border = "none";
+            // Replace the <a> with the iframe
+            link.parentNode.replaceChild(iframe, link);
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Find all elements with class 'high-energy-bills'
+    var highEnergyBillsElements = document.querySelectorAll('.humid-air');
+    highEnergyBillsElements.forEach(function(el) {
+        // Find all <a> tags inside this element
+        var links = el.querySelectorAll('a');
+        links.forEach(function(link) {
+            var url = "https://www.gothrasher.com/3d-house/humid-air.html";
+            // Create iframe
+            var iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.width = "1000";
+            iframe.height = "600";
+            iframe.style.border = "none";
+            // Replace the <a> with the iframe
+            link.parentNode.replaceChild(iframe, link);
+        });
+    });
+});
+
+</script>
 
 
 
 
 
 
+<script src="/js-cloudimage-360-view.3464ddca.js"></script></body><!-- data-play-once --><!-- data-autoplay --></html>
